@@ -57,4 +57,4 @@ $route['awal'] = 'Login/logout';
 
 
 
-$route['monitor'] = 'Mikrotik_Dasboard/MonitoringUsers';
+$route['monitor'] = 'Mikrotik_Dasboard/_MonitoringUsers';
