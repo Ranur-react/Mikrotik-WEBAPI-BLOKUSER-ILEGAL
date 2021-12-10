@@ -15,6 +15,9 @@
 			<!-- End Modal -->
 		</div>
 		<div class="card-body">
+			<?php
+			include 'CharTrafik.php';
+			?>
 			<div class="table-responsive">
 				<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 					<thead>
@@ -54,7 +57,7 @@
 								<td><?= $UsersActive[$i]["mac-address"] ?></td>
 								<td><?= $UsersActive[$i]["login-by"] ?></td>
 								<td><?= $UsersActive[$i]["uptime"] ?></td>
-								<td><?= formatBytes($UsersActive[$i]["bytes-out"],0)?></td>
+								<td><?= formatBytes($UsersActive[$i]["bytes-out"], 0) ?></td>
 								<td><?= formatBytes($UsersActive[$i]["bytes-in"], 0) ?></td>
 								<td><?= formatBytes($UsersActive[$i]["packets-in"], 0); ?></td>
 								<td><?= formatBytes($UsersActive[$i]["packets-out"], 0); ?></td>
