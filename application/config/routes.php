@@ -54,15 +54,7 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 $route['Home'] = 'Mikrotik_Dasboard/Home';
 $route['awal'] = 'Login/logout';
-// $route['Firewall'] = 'Mikrotik_Dasboard/Firewall';
-// $route['Firewall-Tambah'] = 'Mikrotik_Dasboard/Firewall/Tambahblokir';
-$route['profile'] = 'Mikrotik_Dasboard/Profile';
-$route['profile/tambah'] = 'Mikrotik_Dasboard/Profile/tambah';
-$route['profile/destroy'] = 'Mikrotik_Dasboard/Profile/destroy';
-$route['mahasiswa'] = 'Mikrotik_Dasboard/Mahasiswa';
-$route['mahasiswa/setup'] = 'Mikrotik_Dasboard/Mahasiswa/setup';
-$route[ 'userhotspot/tambah'] = 'Mikrotik_Dasboard/Userhotspot/tambah';
-$route['userhotspot/hapus'] = 'Mikrotik_Dasboard/Userhotspot/hapus';
-$route['userhotspot'] = 'Mikrotik_Dasboard/Userhotspot';
-$route['Voucerhotspot'] = 'Mikrotik_Dasboard/Printvoucer';
-$route['PrintVoucerhotspot'] = 'Mikrotik_Dasboard/Printvoucer/cetakVoucer';
+
+
+
+$route['monitor'] = 'Mikrotik_Dasboard/MonitoringUsers';
