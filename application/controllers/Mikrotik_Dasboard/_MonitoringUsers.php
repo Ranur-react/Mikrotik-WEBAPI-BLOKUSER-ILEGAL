@@ -44,7 +44,7 @@ class _MonitoringUsers extends CI_Controller
 		try {
 			$id = $_GET['id'];
 			$this->blokirUser($id);
-			$this->index();
+			redirect(site_url('Mikrotik_Dasboard/_MonitoringUsers'));
 		} catch (\Throwable $th) {
 			echo "Blokir Gagal";
 		}
