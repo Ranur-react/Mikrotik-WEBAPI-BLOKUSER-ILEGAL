@@ -36,6 +36,9 @@
 							<tr>
 								<td><?= $n . '.'; ?></td>
 								<td><?= $jsonData[$i]["server"] ?></td>
+								<td><?= $jsonData[$i]["server"] ?></td>
+								<td><?= $jsonData[$i]["server"] ?></td>
+								<td><?= $jsonData[$i]["server"] ?></td>
 								<td>
 									<a href="#" class="btn btn-danger btn-circle">
 										<i class="fas fa-times"></i>

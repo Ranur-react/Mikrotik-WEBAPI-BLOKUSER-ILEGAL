@@ -16,7 +16,7 @@
 		</div>
 		<div class="card-body">
 			<?php
-			include 'CharTrafik.php';
+			// include 'CharTrafik.php';	
 			?>
 			<div class="table-responsive">
 				<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
@@ -62,7 +62,7 @@
 								<td><?= formatBytes($UsersActive[$i]["packets-in"], 0); ?></td>
 								<td><?= formatBytes($UsersActive[$i]["packets-out"], 0); ?></td>
 								<td>
-									<a href="#" class="btn btn-danger btn-circle">
+									<a href="<?=site_url('Mikrotik_Dasboard/_MonitoringUsers/PutusSambungan?id='). $UsersActive[$i][".id"]?>" class="btn btn-danger btn-circle">
 										<i class="fas fa-times"></i>
 								</td>
 							</tr>

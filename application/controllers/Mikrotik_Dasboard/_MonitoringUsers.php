@@ -38,6 +38,28 @@ class _MonitoringUsers extends CI_Controller
     $this->parser->parse('template/template2', $template);
 	
   }
+	public function PutusSambungan()
+	{
+		
+		try {
+			$id = $_GET['id'];
+			$this->blokirUser($id);
+			$this->index();
+		} catch (\Throwable $th) {
+			echo "Blokir Gagal";
+		}
+	}
+	public function blokirUser($id)
+	{
+
+		$data = $this->DbLogin->show();
+		$Code['command'] = "/ip/hotspot/active/remove"; //perntah
+		$Code['ArrayValue'] = array(         //value dari perintah
+			'.id' => $id,
+		);;
+		$this->mikapi->write($Code, $data);
+	
+	}
 	public function ambilUserActiveDetails()
 	{
 
