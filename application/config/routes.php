@@ -55,6 +55,14 @@ $route['translate_uri_dashes'] = FALSE;
 $route['Home'] = 'Mikrotik_Dasboard/Home';
 $route['awal'] = 'Login/logout';
 
-
-
 $route['monitor'] = 'Mikrotik_Dasboard/_MonitoringUsers';
+
+
+
+$route['profile'] = 'Mikrotik_Dasboard/Profile';
+$route['profile/tambah'] = 'Mikrotik_Dasboard/Profile/tambah';
+$route['profile/destroy'] = 'Mikrotik_Dasboard/Profile/destroy';
+
+$route['userhotspot/tambah'] = 'Mikrotik_Dasboard/Userhotspot/tambah';
+$route['userhotspot/hapus'] = 'Mikrotik_Dasboard/Userhotspot/hapus';
+$route['userhotspot'] = 'Mikrotik_Dasboard/Userhotspot';
